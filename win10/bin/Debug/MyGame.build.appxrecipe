@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SHCHOWD-X220</Machine>
+    <WindowsUser>shchowd</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>F545AB2A-A226-41BB-A451-6399D65DA9B1</PackageIdentityName>
+    <IntermediateOutputPath>C:\_work\construct2Prac\space-shooter\win10\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\_work\construct2Prac\space-shooter\win10\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\square44logo.scale-200.png">
+      <PackagePath>images\square44logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\player2-sheet0.png">
+      <PackagePath>images\player2-sheet0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\player1-sheet0.png">
+      <PackagePath>images\player1-sheet0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\bg.png">
+      <PackagePath>images\bg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\laserblue-sheet0.png">
+      <PackagePath>images\laserblue-sheet0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\laserred-sheet0.png">
+      <PackagePath>images\laserred-sheet0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\rock-sheet0.png">
+      <PackagePath>images\rock-sheet0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\images\explosion-sheet0.png">
+      <PackagePath>images\explosion-sheet0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\icon-16.png">
+      <PackagePath>icon-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\icon-32.png">
+      <PackagePath>icon-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\icon-114.png">
+      <PackagePath>icon-114.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\icon-128.png">
+      <PackagePath>icon-128.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\icon-256.png">
+      <PackagePath>icon-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\loading-logo.png">
+      <PackagePath>loading-logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\WinJS\css\ui-dark.css">
+      <PackagePath>WinJS\css\ui-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\WinJS\css\ui-light.css">
+      <PackagePath>WinJS\css\ui-light.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\WinJS\fonts\Symbols.ttf">
+      <PackagePath>WinJS\fonts\Symbols.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\WinJS\js\en-US\ui.strings.js">
+      <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\WinJS\js\base.js">
+      <PackagePath>WinJS\js\base.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\WinJS\js\ui.js">
+      <PackagePath>WinJS\js\ui.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\start.js">
+      <PackagePath>start.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\c2runtime.js">
+      <PackagePath>c2runtime.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\jquery-2.1.1.min.js">
+      <PackagePath>jquery-2.1.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\index.html">
+      <PackagePath>index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\data.json">
+      <PackagePath>data.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\_work\construct2Prac\space-shooter\win10\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

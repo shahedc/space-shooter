@@ -1,0 +1,16 @@
+C:\_work\construct2Prac\space-shooter\win10\bin\Debug\ReverseMap\resources.pri
+C:\_work\construct2Prac\space-shooter\win10\bin\Debug\AppxManifest.xml
+C:\_work\construct2Prac\space-shooter\win10\bin\Debug\MyGame.build.appxrecipe
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\ResourceHandlingTask.state
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\priconfig.xml
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\priconfig.xml.intermediate
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\layout.resfiles
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\layout.resfiles.intermediate
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\resources.resfiles
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\resources.resfiles.intermediate
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\pri.resfiles
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\pri.resfiles.intermediate
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\qualifiers.txt
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\qualifiers.txt.intermediate
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\_work\construct2Prac\space-shooter\win10\bld\Debug\ProjectArchitectures.txt
