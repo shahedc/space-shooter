@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Spacey Space Shooter</name>
+    <description>Spacey Space Shooter game</description>
+    <version>1.0.0.1</version>
+    <author>Shahed Chowdhuri</author>
+    <author-email>shchowd@microsoft.com</author-email>
+    <author-website>http://WakeUpAndCode.com</author-website>
+    <app-id>chowdhuri.shahed.sss</app-id>
+    <unique-id>1l2cp9vkirrg2</unique-id>
+    <saved-with-version>21600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="player2" sid="4406340365510809">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="6276665274471973">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="8251782036507979">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="1757386413086546">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1468351880535417" speed="5">
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.50505" original-source="C:\_work\construct2Prac\freebundle\Sprites\Space shooter\playerShip1_blue.png">
+                        <image-point name="Imagepoint 1" x="0.973333" y="0.494949" />
+                        <collision-poly>
+                            <point x="0.6" y="0.30303" />
+                            <point x="1" y="0.494949" />
+                            <point x="0.6" y="0.69697" />
+                            <point x="0.506667" y="0.989899" />
+                            <point x="0.186667" y="0.858586" />
+                            <point x="0" y="0.494949" />
+                            <point x="0.186667" y="0.141414" />
+                            <point x="0.506667" y="0.010101" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player1" sid="4936132761256967">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="473027734220155">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="9392439529218755">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="117625857065481">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7997937306287521" speed="5">
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.50505" original-source="C:\_work\construct2Prac\freebundle\Sprites\Space shooter\playerShip1_red.png">
+                        <image-point name="Imagepoint 1" x="0.986667" y="0.484848" />
+                        <collision-poly>
+                            <point x="0.6" y="0.30303" />
+                            <point x="1" y="0.494949" />
+                            <point x="0.6" y="0.69697" />
+                            <point x="0.506667" y="0.989899" />
+                            <point x="0.186667" y="0.858586" />
+                            <point x="0" y="0.494949" />
+                            <point x="0.186667" y="0.141414" />
+                            <point x="0.506667" y="0.010101" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="4000692687429234">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="bg" sid="7925186746676761">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\_work\construct2Prac\freebundle\Sprites\Space shooter\Backgrounds\purple.png" />
+        </object-type>
+        <object-type name="laserblue" sid="9881875671421129">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3735896455982123">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="5719836066436522">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9604694998531058" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.461538" original-source="C:\_work\construct2Prac\freebundle\Sprites\Space shooter\Lasers\laserBlue02.png">
+                        <collision-poly>
+                            <point x="0.0540541" y="0.846154" />
+                            <point x="0" y="0.538462" />
+                            <point x="0.0540541" y="0.153846" />
+                            <point x="0.486486" y="0" />
+                            <point x="0.945946" y="0.153846" />
+                            <point x="1" y="0.538462" />
+                            <point x="0.945946" y="0.846154" />
+                            <point x="0.486486" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="laserred" sid="4541763157898874">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="4414484590740496">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="523740261485853">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8538119203737287" speed="5">
+                    <frame duration="1" hotspotX="0.491228" hotspotY="0.538462" original-source="C:\_work\construct2Prac\freebundle\Sprites\Space shooter\Lasers\laserRed12.png">
+                        <collision-poly>
+                            <point x="0.982456" y="0.111111" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.982456" y="0.888889" />
+                            <point x="0.508772" y="1" />
+                            <point x="0.0175439" y="0.888889" />
+                            <point x="0" y="0.444444" />
+                            <point x="0.0175439" y="0.111111" />
+                            <point x="0.508772" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rock" sid="2757429167464168">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="3492627609569463">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="6247180345265874">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8817806286574108" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5" original-source="C:\_work\construct2Prac\freebundle\Sprites\Space shooter\Meteors\meteorBrown_big1.png">
+                        <collision-poly>
+                            <point x="0.128713" y="0.154762" />
+                            <point x="0.49505" y="0.0119048" />
+                            <point x="0.841584" y="0.190476" />
+                            <point x="0.990099" y="0.5" />
+                            <point x="0.861386" y="0.833333" />
+                            <point x="0.49505" y="0.892857" />
+                            <point x="0.148515" y="0.821429" />
+                            <point x="0.029703" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="explosion" sid="5674501002266949">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5101143800993298">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4259923586937407" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\_work\construct2Prac\freebundle\Sprites\Space\Explosions\Exp_type_A.gif" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P1ScoreText" sid="4281719464234294">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P2ScoreText" sid="7109431204834165">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Function" sid="7364666555892444">
+            <plugin id="Function" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Players" plugin-id="Sprite" sid="6069751991924029">
+            <members>
+                <member>player1</member>
+                <member>player2</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Function" uid="10" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

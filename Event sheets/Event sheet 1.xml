@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="p1score" sid="9656599418075361" static="0" type="number">0</variable>
+        <variable constant="0" name="p2score" sid="5767145877591509" static="0" type="number">0</variable>
+        <event-group description="" sid="6598862074445531" title="Controls">
+            <sub-events>
+                <event-block sid="3664397683732627">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="6011726842104535" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7133716312427708" type="player1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7495490141814121">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="132172004324359" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7466139809570348" type="player1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3488019753924427">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1542886355398056" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="6481676982209709" type="player1">
+                            <param id="0" name="Object">laserred</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7755382251784826">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="7421576328782919" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="3491533472876073" type="player2">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2323364688325204">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4578831435228246" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="3037249978375397" type="player2">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3926724959095621">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5361651611006771" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="1019779112741481" type="player2">
+                            <param id="0" name="Object">laserblue</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1054118355414121" title="Rocks">
+            <sub-events>
+                <event-block sid="8480575503207916">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="6435901544340218" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="4697142328172068" type="System">
+                            <param id="0" name="Object to create">rock</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(0, LayoutWidth)</param>
+                            <param id="3" name="Y">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1524711118311863" title="Collisions">
+            <sub-events>
+                <event-block sid="148325406321224">
+                    <conditions>
+                        <condition id="0" name="On function" sid="8736855110098483" type="Function">
+                            <param id="0" name="Name">&quot;DestroyRock&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="2319752166041426" type="System">
+                            <param id="0" name="Object to create">explosion</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">rock.X</param>
+                            <param id="3" name="Y">rock.Y</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8762480756946723" type="rock" />
+                    </actions>
+                </event-block>
+                <event-block sid="5683458661596142">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5371385562700515" type="rock">
+                            <param id="0" name="Object">player1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="3620740187521598" type="player1">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4606141776403884">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9686289391369285" type="rock">
+                            <param id="0" name="Object">player2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="7528292128599219" type="player2">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5254910234391551">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5016760814009233" type="laserred">
+                            <param id="0" name="Object">rock</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="5386558455203733" type="Function">
+                            <param id="0" name="Name">&quot;DestroyRock&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Add to" sid="5138500177051794" type="System">
+                            <param id="0" name="Variable">p1score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4940877300869749" type="P1ScoreText">
+                            <param id="0" name="Text">&quot;P1: &quot; &amp; p1score</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2014001839753984">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9569529954604322" type="laserblue">
+                            <param id="0" name="Object">rock</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="8280196474725555" type="Function">
+                            <param id="0" name="Name">&quot;DestroyRock&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Add to" sid="2784834213659016" type="System">
+                            <param id="0" name="Variable">p2score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4765114614255819" type="P2ScoreText">
+                            <param id="0" name="Text">&quot;P2: &quot; &amp; p2score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
